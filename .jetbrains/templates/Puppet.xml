@@ -1,0 +1,16 @@
+<templateSet group="Puppet">
+  <template name="filek" value="file { &quot;$FILENAME$&quot;:&#10;  ensure  =&gt; file,&#10;  replace =&gt; false,&#10;}&#10;$END$" description="keep this file untouched by Puppet" toReformat="true" toShortenFQNames="true">
+    <variable name="FILENAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PUPPET_FILE" value="true" />
+    </context>
+  </template>
+  <template name="dirp" value="file { '$DIR_NAME$':&#10;  ensure  =&gt; directory,&#10;  source  =&gt; &quot;puppet:///modules/${module_name}/$DIR_SOURCE$&quot;,&#10;  recurse =&gt; true,&#10;  purge   =&gt; true,&#10;  replace =&gt; true,&#10;  owner   =&gt; '$OWNER$',&#10;  group   =&gt; '$OWNER$',&#10;  mode    =&gt; '0755',&#10; }" description="recurse, source, purge unmanaged" toReformat="true" toShortenFQNames="true">
+    <variable name="DIR_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DIR_SOURCE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OWNER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PUPPET_FILE" value="true" />
+    </context>
+  </template>
+</templateSet>

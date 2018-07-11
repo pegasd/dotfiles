@@ -1,0 +1,8 @@
+<templateSet group="Puppet RSpec">
+  <template name="desc" value="describe '$PUPPET_CLASS$' do&#10; &#10;  on_supported_os.each do |os, f|&#10;    context &quot;on #{os}&quot; do&#10;      let(:facts) { f }&#10;      &#10;      context 'with default parameters' do&#10;        it { is_expected.to compile_with_all_deps }&#10;        &#10;        it { is_expected.to contain_class('$PUPPET_CLASS$') }&#10;        &#10;        $END$&#10;        &#10;      end&#10;    end&#10;  end&#10;&#10;end" description="describe class" toReformat="false" toShortenFQNames="true">
+    <variable name="PUPPET_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+</templateSet>
