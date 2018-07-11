@@ -35,5 +35,10 @@ alias v='vim'
 alias sv='sudo vim'
 alias sgrep='ggrep -RE --color=always'
 alias rmjunk='find -E . -regex ".*(\.yptfxcaches|\.DS_Store|\.localized|\._\.Trashes|\.Trashes|\.fseventsd|\.Spotlight-V100)" -delete'
+
+# Ruby
 alias rk='time bundle exec rake'
 alias be='time bundle exec'
+
+# Ansible
+alias anplay='time ansible-playbook'
