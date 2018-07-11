@@ -1,0 +1,10 @@
+syntax: glob
+
+*~
+.DS_Store
+*.pyc
+
+# IDEA
+.idea/
+*.iml
+.rakeTasks
