@@ -19,6 +19,7 @@ path=()
 for PDIR in ~/bin \
   /opt/local/bin  /usr/local/bin  /bin  /usr/bin  \
   /opt/local/sbin /usr/local/sbin /sbin /usr/sbin \
+  /usr/libexec \
   /opt/puppetlabs/pdk/bin /opt/puppetlabs/bin
 do
   [ -d $PDIR ] && path=($path $PDIR)
