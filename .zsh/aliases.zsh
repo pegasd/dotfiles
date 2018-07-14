@@ -42,3 +42,6 @@ alias be='time bundle exec'
 
 # Ansible
 alias anplay='time ansible-playbook'
+
+# macOS
+alias pbud='/usr/libexec/PlistBuddy'
