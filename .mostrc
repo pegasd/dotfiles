@@ -2,5 +2,5 @@
 
 color normal default default
 color status brightgreen default
-color underline brightgreen black
-color overstrike yellow black
+color underline brightgreen default
+color overstrike yellow default
