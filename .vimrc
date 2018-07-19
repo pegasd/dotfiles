@@ -41,7 +41,7 @@ set statusline=[%n]\ -=PegaS=-\ %F\ \ Format=%{&ff}\ Type=%Y\ \ %r\ %1*%m%*%w%=%
 " Spelling
 set nospell
 set spellsuggest=double
-set spelllang=en_us,ru
+set spelllang=en_us
 
 " Syntax highlighting
 syntax enable
