@@ -13,24 +13,7 @@ Green='\[\033[0;32m\]'
 Yellow='\[\033[0;33m\]'
 Cyan='\[\033[0;36m\]'
 
-# deploy: ssh -A && ssh-agent && screen
-function deploy() {
-  if [[ -n "$SSH_AUTH_SOCK" ]]; then
-    [[ -z "$(pgrep -u $(whoami) ssh-agent | tail -n 1)" ]] && ssh-agent
-    # @kshcherban \/
-    ln -sf $(find /tmp -maxdepth 2 -type s -name "agent*" -user $USER -printf '%T@ %p\n' 2>/dev/null |sort -n|tail -1|cut -d' ' -f2) ~/.ssh/ssh_auth_sock
-    export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
-
-    cd /usr/local/share/deploy
-
-    screen -r 2> /dev/null || screen -S deploy
-  else
-    echo 'SSH_AUTH_SOCK is not set. Did you forget to -A?'
-  fi
-}
-
 # Options
-PATH="~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/games:/opt/local/bin"
 HISTCONTROL=ignoreboth
 shopt -s histappend
 shopt -s checkwinsize
@@ -147,13 +130,8 @@ case $(uname) in
     ;;
 esac
 
-if [[ -x "$(which vim 2> /dev/null)" ]]; then
-  alias v='vim'
-  alias sv='sudo -E vim'
-else
-  alias v='vi'
-  alias sv='sudo -E vi'
-fi
+alias v='vim'
+alias sv='sudo -E vim'
 
 # UTF-8
 export LC_ALL='en_US.UTF-8'
