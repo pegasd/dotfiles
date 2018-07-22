@@ -1,0 +1,3 @@
+# Suppress login messages
+#
+# See `man 1 login`
