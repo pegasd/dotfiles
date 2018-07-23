@@ -1,0 +1,14 @@
+###
+#  .screenrc
+###
+
+startup_message off
+
+screen -t sh
+screen -t sh
+screen -t sh
+select 0
+
+hardstatus on
+hardstatus string '%{= kG}[ %{C}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{Y} %Y-%m-%d %{W}%c %{g}]'
+hardstatus alwayslastline
