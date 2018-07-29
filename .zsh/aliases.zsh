@@ -45,3 +45,4 @@ alias anplay='time ansible-playbook'
 
 # macOS
 alias pbud='/usr/libexec/PlistBuddy'
+alias xee='open -a xee³'
