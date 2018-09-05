@@ -18,7 +18,7 @@ Here's a relevant bit of code that manages this:
 - name: Bring over my dotfiles
   git:
     dest: '~/.dotfiles'
-    repo: 'https://github.com/{{ dotfiles_repo }}'
+    repo: '{{ dotfiles_repo }}'
     update: '{{ update_dotfiles }}'
     force: '{{ update_dotfiles }}'
 
