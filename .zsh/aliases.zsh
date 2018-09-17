@@ -34,7 +34,7 @@ alias g='git'
 alias v='vim'
 alias sv='sudo vim'
 alias sgrep='ggrep -RE --color=always'
-alias rmjunk='find -E . -regex ".*(\.yptfxcaches|\.DS_Store|\.localized|\._\.Trashes|\.Trashes|\.fseventsd|\.Spotlight-V100)" -delete'
+alias rmjunk='find . -name ".DS_Store" -delete'
 
 # Ruby
 alias rk='time bundle exec rake'
