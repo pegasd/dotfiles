@@ -12,7 +12,7 @@ CUR_DIR_COLOR="$pr_yellow"
 
 case $(hostname -s) in
   simensis) HOST_COLOR="$pr_green" ;;
-  dirus) HOST_COLOR="$pr_yellow" ;;
+  lupus) HOST_COLOR="$pr_yellow" ;;
   adustus) HOST_COLOR="$pr_magenta" ;;
   *) HOST_COLOR="$pr_cyan" ;;
 esac
