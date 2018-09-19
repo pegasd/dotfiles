@@ -41,7 +41,7 @@ alias rk='time bundle exec rake'
 alias be='time bundle exec'
 
 # Ansible
-alias anplay='time ansible-playbook'
+alias anplay='time ansible-playbook --diff'
 
 # macOS
 alias pbud='/usr/libexec/PlistBuddy'
