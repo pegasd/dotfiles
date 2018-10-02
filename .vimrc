@@ -12,8 +12,8 @@ set incsearch
 set matchtime=7
 set matchpairs=(:),[:],{:},<:>
 set noerrorbells
+set nonumber
 set novisualbell
-set number
 set report=0
 set showmatch
 set modeline
