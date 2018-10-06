@@ -12,7 +12,7 @@ set incsearch
 set matchtime=7
 set matchpairs=(:),[:],{:},<:>
 set noerrorbells
-set nonumber
+set number
 set novisualbell
 set report=0
 set showmatch
