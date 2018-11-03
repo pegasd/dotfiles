@@ -51,20 +51,20 @@ colorscheme pegas
 set langmap="й',у.,кp,еy,нf,гg,шc,щr,зl,х/,ъ=,фa,ыo,вe,аu,пi,рd,оh,лt,дn,э-,чq,сj,мk,иx,тb,ьm,бw,юv,ё`,Я:,ГG"
 
 " Key mappings
-map ,on   :windo set number!<CR>
-map ,or   :windo set relativenumber!<CR>
-map ,op   :windo set paste!<CR>
-map ,oh   :windo set hlsearch!<CR>
-map ,ol   :windo set list!<CR>
-map ,ot   :windo set expandtab!<CR>
+map ,on  :windo set number!<CR>
+map ,or  :windo set relativenumber!<CR>
+map ,op  :windo set paste!<CR>
+map ,oh  :windo set hlsearch!<CR>
+map ,ol  :windo set list!<CR>
+map ,ot  :windo set expandtab!<CR>
 
-map ,oi2  :windo set tabstop=2 shiftwidth=2 softtabstop=2<CR>
-map ,oi4  :windo set tabstop=4 shiftwidth=4 softtabstop=4<CR>
-map ,oi8  :windo set tabstop=8 shiftwidth=8 softtabstop=8<CR>
+map ,oi2 :windo set tabstop=2 shiftwidth=2 softtabstop=2<CR>
+map ,oi4 :windo set tabstop=4 shiftwidth=4 softtabstop=4<CR>
+map ,oi8 :windo set tabstop=8 shiftwidth=8 softtabstop=8<CR>
 
-map ,te   :Tab/=<CR>
-map ,tr   :Tab/=><CR>
-map ,tj   :Tab/:/r0\zs<CR>
+map ,te  :Tab/=<CR>
+map ,tr  :Tab/=><CR>
+map ,tj  :Tab/:/r0\zs<CR>
 
 " Indentation
 set expandtab
