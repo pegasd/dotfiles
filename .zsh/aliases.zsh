@@ -39,6 +39,7 @@ alias rmjunk='find . -name ".DS_Store" -delete'
 # Ruby
 alias rk='time bundle exec rake'
 alias be='time bundle exec'
+alias bin='bundle install --path ~/.bundle'
 
 # Ansible
 alias anplay='time ansible-playbook --diff'
