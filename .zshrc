@@ -49,9 +49,8 @@ setopt no__nomatch          # don't complain about no match (e.g. *)
 setopt no__beep             # don't beep
 
 # Format of the 'time' command output
-# export TIMEFORMAT=$'\n    \e[32m%U \e[muser \e[32m%S \e[msystem \e[32m%P \e[mcpu \e[32m%E \e[mtotal\n'
-# export TIMEFMT=$'\n  [ \e[33m%J\e[m ]   \e[32m%U \e[muser \e[32m%S \e[msystem \e[32m%P \e[mcpu \e[32m%E \e[mtotal\n'
-export TIMEFMT=$'   [ \e[33m%J\e[m ]   \e[32m%U \e[muser \e[32m%S \e[msystem \e[32m%P \e[mcpu \e[32m%E \e[mtotal'
+export TIMEFORMAT=$'\n    \e[32m%U \e[muser \e[32m%S \e[msystem \e[32m%P \e[mcpu \e[32m%E \e[mtotal\n'
+export TIMEFMT=$'\n  [ \e[33m%J\e[m ]   \e[32m%U \e[muser \e[32m%S \e[msystem \e[32m%P \e[mcpu \e[32m%E \e[mtotal\n'
 
 # Environment
 [[ -x $(which most) ]] && PAGER='most -cw' || PAGER=less
