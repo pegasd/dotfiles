@@ -1,38 +1,39 @@
-[user]
-name  = Eugene Piven
-email = thepegasd@gmail.com
+[include]
+  path = ~/.gitconfig_local
 
 [alias]
-d        = diff
-co       = checkout
-ci       = commit
-st       = status --short
-lst      = status
-pst      = status --porcelain
-url      = remote show origin
-outgoing = log @{u}..
-incoming = "!git remote update -p; git log ..@{u}"
-out      = "!git outgoing"
-in       = "!git incoming"
-rollback = reset --soft HEAD^
-upc      = reset --hard
+  d        = diff
+  co       = checkout
+  ci       = commit
+  st       = status --short
+  lst      = status
+  pst      = status --porcelain
+  url      = remote show origin
+  outgoing = log @{u}..
+  incoming = "!git remote update -p; git log ..@{u}"
+  out      = "!git outgoing"
+  in       = "!git incoming"
+  rollback = reset --soft HEAD^
+  upc      = reset --hard
 
 [core]
-excludesfile = ~/.gitignore
-pager        = /bin/cat
+  excludesfile = ~/.gitignore
+  pager        = /bin/cat
 
 [color]
-ui = auto
+  ui = auto
 
 [color "branch"]
   current = yellow reverse
   local   = yellow
   remote  = green
+
 [color "diff"]
   meta = yellow
   frag = magenta
   old  = red
   new  = green
+
 [color "status"]
   added     = green
   changed   = yellow
