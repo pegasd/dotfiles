@@ -83,6 +83,7 @@ autocmd BufNewFile,BufRead *.swift set filetype=swift
 autocmd BufNewFile,BufRead Jenkinsfile set filetype=groovy
 autocmd BufNewFile,BufRead Podfile,Puppetfile,Brewfile set filetype=ruby
 autocmd BufNewFile,BufRead *.gitconfig_* set filetype=gitconfig
+autocmd BufNewFile,BufRead *.timesheet set filetype=timesheet
 autocmd FileType text setlocal spell
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 colorcolumn=80
 autocmd FileType groovy setlocal tabstop=4 shiftwidth=4 softtabstop=4
