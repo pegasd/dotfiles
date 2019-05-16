@@ -35,6 +35,10 @@ diff.deleted = red
 diff.inserted = green
 diff.changed = white
 diff.trailingwhitespace = white_background
+branches.active = white bold
+branches.closed = none
+branches.current = green
+branches.inactive = white bold
 
 [merge-tools]
 vimdiff.executable = vim
