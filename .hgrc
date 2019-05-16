@@ -1,14 +1,38 @@
 [ui]
 ignore = ~/.hgignore
-merge = vimdiff
+merge  = vimdiff
 
 [pager]
 pager = /bin/cat
 
 [alias]
-aa = addremove --similarity 70
-anno = annotate --user --number --date
+aa    = addremove --similarity 70
+anno  = annotate --user --number --date
 rpull = !find . -maxdepth 2 -name .hg -type d -print -execdir hg pull -u \;
+
+[color]
+status.modified         = cyan
+status.removed          = red bold
+status.deleted          = yellow underline
+status.unknown          = magenta bold underline
+status.ignored          = white bold
+diff.diffline           = none
+diff.extended           = cyan
+diff.file_a             = red
+diff.file_b             = green
+diff.hunk               = yellow
+diff.deleted            = red
+diff.inserted           = green
+diff.changed            = white
+diff.trailingwhitespace = white_background
+branches.current        = green bold
+branches.active         = cyan underline
+branches.inactive       = cyan
+branches.closed         = none
+
+[merge-tools]
+vimdiff.executable = vim
+vimdiff.args       = -d $base $local $output $other +close +close
 
 [extensions]
 color =
@@ -19,30 +43,6 @@ rebase =
 purge =
 strip =
 churn =
-
-[color]
-status.modified = cyan
-status.removed = red bold
-status.deleted = yellow underline
-status.unknown = magenta bold underline
-status.ignored = white bold
-diff.diffline = none
-diff.extended = cyan
-diff.file_a = red
-diff.file_b = green
-diff.hunk = yellow
-diff.deleted = red
-diff.inserted = green
-diff.changed = white
-diff.trailingwhitespace = white_background
-branches.active = white bold
-branches.closed = none
-branches.current = green
-branches.inactive = white bold
-
-[merge-tools]
-vimdiff.executable = vim
-vimdiff.args = -d $base $local $output $other +close +close
 
 # Local settings
 %include ~/.hgrc_local
