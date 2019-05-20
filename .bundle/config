@@ -1,4 +1,4 @@
 ---
-BUNDLE_PATH: "~/.bundle/gems"
-BUNDLE_PATH__SYSTEM: "false"
+BUNDLE_GLOBAL_PATH_APPENDS_RUBY_SCOPE: "true"
+BUNDLE_PATH: "~/.bundle"
 BUNDLE_SPECIFIC_PLATFORM: "true"
