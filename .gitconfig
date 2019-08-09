@@ -18,6 +18,7 @@
   in       = "!git incoming"
   rollback = reset --soft HEAD^
   upc      = reset --hard
+  rpull    = "!find . -maxdepth 2 -name .git -type d -print -execdir git pull ';'"
 
 [core]
   excludesfile = ~/.gitignore
