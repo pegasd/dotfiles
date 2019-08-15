@@ -13,7 +13,6 @@ alias -g T='| tail -n 15'
 alias -g G='| egrep'
 alias -g H='| head -n 15'
 alias -g L='| less'
-alias -g M='| most'
 
 # Aliases
 if test ls --color 2> /dev/null; then

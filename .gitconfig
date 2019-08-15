@@ -22,7 +22,6 @@
 
 [core]
   excludesfile = ~/.gitignore
-  pager        = /bin/cat
 
 [color]
   ui = auto

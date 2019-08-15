@@ -2,9 +2,6 @@
 ignore = ~/.hgignore
 merge  = vimdiff
 
-[pager]
-pager = /bin/cat
-
 [alias]
 aa    = addremove --similarity 70
 anno  = annotate --user --number --date

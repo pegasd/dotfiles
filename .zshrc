@@ -53,8 +53,7 @@ export TIMEFORMAT=$'\n    \e[32m%U \e[muser \e[32m%S \e[msystem \e[32m%P \e[mcpu
 export TIMEFMT=$'\n  [ \e[33m%J\e[m ]   \e[32m%U \e[muser \e[32m%S \e[msystem \e[32m%P \e[mcpu \e[32m%E \e[mtotal\n'
 
 # Environment
-[[ -x $(which most) ]] && PAGER='most -cw' || PAGER=less
-export PAGER
+export PAGER=less
 export EDITOR=vim
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
