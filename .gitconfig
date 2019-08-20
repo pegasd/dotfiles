@@ -12,6 +12,7 @@
   lst      = status
   pst      = status --porcelain
   url      = remote show origin
+  pus      = push
   outgoing = log @{u}..
   incoming = "!git remote update -p; git log ..@{u}"
   out      = "!git outgoing"
