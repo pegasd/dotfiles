@@ -62,6 +62,10 @@ map ,oi2 :windo set tabstop=2 shiftwidth=2 softtabstop=2<CR>
 map ,oi4 :windo set tabstop=4 shiftwidth=4 softtabstop=4<CR>
 map ,oi8 :windo set tabstop=8 shiftwidth=8 softtabstop=8<CR>
 
+map ,oc1 :windo set colorcolumn=140<CR>
+map ,oc2 :windo set colorcolumn=120<CR>
+map ,oc8 :windo set colorcolumn=80<CR>
+
 map ,te  :Tab/=<CR>
 map ,tr  :Tab/=><CR>
 map ,tj  :Tab/:/r0\zs<CR>
