@@ -21,7 +21,7 @@
   upc      = reset --hard
   rpull    = "!find . -maxdepth 2 -name .git -type d -print -execdir git pull --all ';'"
   tags     = tag --sort=v:refname
-  pruneloc = "!git remote prune origin; git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
+  pruneloc = "!git checkout master; git pull; git remote prune origin; git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
 
 [core]
   excludesfile = ~/.gitignore
