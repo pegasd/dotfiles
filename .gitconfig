@@ -19,7 +19,7 @@
   in       = "!git incoming"
   rollback = reset --soft HEAD^
   upc      = reset --hard
-  rpull    = "!find . -maxdepth 2 -name .git -type d -print -execdir git pull ';'"
+  rpull    = "!find . -maxdepth 2 -name .git -type d -print -execdir git pull --all ';'"
   tags     = tag --sort=v:refname
   pruneloc = "!git remote prune origin; git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
 
