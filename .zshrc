@@ -74,5 +74,8 @@ GCLOUD_SDK_PATH='/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk'
 # Go
 export GOPATH=~/Developer/Go
 
+# A dirty workaround for new macOS versions
+ssh-add -L > /dev/null || ssh-add
+
 # Exit to prevent execution of unreviewed appended code
 return 0
