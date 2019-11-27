@@ -1,0 +1,4 @@
+[pycodestyle]
+max-line-length = 200
+ignore = E501,W503
+statistics = True

@@ -1,0 +1,5 @@
+[MESSAGES CONTROL]
+disable=import-error,wrong-import-order
+
+[FORMAT]
+max-line-length=200
