@@ -9,6 +9,7 @@
   <option name="RIGHT_MARGIN" value="140" />
   <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
   <HCL-Terraform>
+    <option name="PROPERTY_ALIGNMENT" value="2" />
     <option name="ARRAY_WRAPPING" value="0" />
   </HCL-Terraform>
   <Python>
@@ -21,7 +22,7 @@
     <option name="HANG_CLOSING_BRACKETS" value="true" />
   </Python>
   <Ruby>
-    <option name="INDENT_WHEN_CASES" value="false" />
+    <option name="CONVERT_BRACE_BLOCK_BY_ENTER" value="false" />
   </Ruby>
   <codeStyleSettings language="HTML">
     <indentOptions>
