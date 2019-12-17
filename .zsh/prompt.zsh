@@ -73,9 +73,16 @@ zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
   fi
 }
 
+set_touchbar_status() {
+  if [[ -x ~/.iterm2/it2setkeylabel ]]; then
+    ~/.iterm2/it2setkeylabel set status "$(test -d .git && (git rev-parse --abbrev-ref HEAD) || (echo -n "not a repo"))"
+  fi
+}
+
 precmd() {
   ((PWDLEN = $COLUMNS - ${#${(%):-%n-%m------(-)}}))
   vcs_info
+  set_touchbar_status
 }
 
 PR_HOST="$HOST_COLOR%m$pr_reset"
