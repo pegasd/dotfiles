@@ -1,5 +1,12 @@
+# vim
 *~
+*.swp
+*.swo
+
+# macOS
 .DS_Store
+
+# JetBrains
 *.iml
 .idea
 .rakeTasks
