@@ -1,3 +1,6 @@
+# Python
+*.pyc
+
 # vim
 *~
 *.swp
@@ -6,7 +9,7 @@
 # macOS
 .DS_Store
 
-# JetBrains
+# JetBrains IDEs
 *.iml
 .idea
 .rakeTasks

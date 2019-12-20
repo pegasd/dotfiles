@@ -1,10 +1,17 @@
 syntax: glob
 
-*~
-.DS_Store
+# Python
 *.pyc
 
-# IDEA
+# vim
+*~
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# JetBrains IDEs
 .idea/
 *.iml
 .rakeTasks
