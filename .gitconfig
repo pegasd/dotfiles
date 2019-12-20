@@ -22,7 +22,7 @@
   rpull    = "!find . -maxdepth 2 -name .git -type d -print -execdir git pull --all ';'"
   tags     = tag --sort=v:refname
   pruneloc = "!git checkout master; git pull; git remote prune origin; git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
-  reltag   = "!git tag $(jq --raw-output .version metadata.json)"
+  reltag   = "!git tag $(jq --raw-output .version metadata.json); git push --tags"
 
 [core]
   excludesfile = ~/.gitignore
