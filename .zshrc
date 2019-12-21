@@ -78,7 +78,7 @@ export GOPATH=~/Developer/Go
 ssh-add -L > /dev/null || ssh-add
 
 # iTerm2 shell integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+test -e "${HOME}/.iterm2/shell_integration.zsh" && source "${HOME}/.iterm2/shell_integration.zsh"
 
 # Exit to prevent execution of unreviewed appended code
 return 0
