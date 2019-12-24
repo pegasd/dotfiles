@@ -33,7 +33,7 @@ alias g='git'
 alias v='vim'
 alias sv='sudo vim'
 alias sgrep='ggrep -RE --color=always'
-alias rmjunk='find . -name ".DS_Store" -delete'
+alias rmjunk='find . -name ".DS_Store" -delete 2> /dev/null'
 
 # Ruby
 alias rk='time bundle exec rake'
