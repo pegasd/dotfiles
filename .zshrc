@@ -15,7 +15,6 @@ HISTFILE=~/.history/zshhistory
 cdpath=(~)
 fpath=($fpath ~/.zsh/functions)
 path=()
-# ~/.gem/ruby/*/bin
 for PDIR in ~/bin \
   /opt/local/bin  /usr/local/bin  /bin  /usr/bin  \
   /opt/local/sbin /usr/local/sbin /sbin /usr/sbin \
@@ -70,6 +69,9 @@ GCLOUD_SDK_PATH='/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk'
 
 # rvm
 [ -s ~/.rvm/scripts/rvm ] && . ~/.rvm/scripts/rvm
+
+# pyenv
+[ -d ~/.pyenv ] && eval "$(pyenv init -)"
 
 # Go
 export GOPATH=~/Developer/Go
