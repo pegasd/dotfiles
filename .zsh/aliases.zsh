@@ -46,4 +46,4 @@ alias anplay='time ansible-playbook --diff'
 # macOS
 alias pbud='/usr/libexec/PlistBuddy'
 alias xee='open -a xee³'
-alias brewup='brew upgrade; brew cask upgrade $(brew cask outdated --greedy)'
+alias brewup='brew upgrade; brew upgrade --cask $(brew outdated --cask --greedy)'
