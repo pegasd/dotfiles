@@ -49,12 +49,16 @@
 [merge]
   tool = intellij
   conflictstyle = diff3
+
 [mergetool "intellij"]
   cmd = idea merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
   trustExitCode = true
+
 [diff]
   tool = intellij
+
 [difftool "intellij"]
   cmd = idea diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
+
 [mergetool]
   prompt = false
