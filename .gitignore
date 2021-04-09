@@ -13,3 +13,6 @@
 *.iml
 .idea
 .rakeTasks
+
+# VSCode
+.vscode
