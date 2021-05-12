@@ -4,6 +4,9 @@
 [push]
   default = current
 
+[pull]
+  rebase = false
+
 [alias]
   d        = diff
   co       = checkout
