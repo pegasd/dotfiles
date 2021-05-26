@@ -71,7 +71,7 @@ GCLOUD_SDK_PATH='/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk'
 [ -s ~/.rvm/scripts/rvm ] && . ~/.rvm/scripts/rvm
 
 # pyenv
-[ -d ~/.pyenv ] && eval "$(pyenv init -)"
+[ -d ~/.pyenv ] && eval "$(pyenv init --path)"
 
 # Go
 export GOPATH=~/Developer/Go
