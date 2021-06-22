@@ -84,14 +84,12 @@ autocmd BufNewFile,BufRead *.sh,*.bash set filetype=sh
 autocmd BufNewFile,BufRead *.zsh,~/.zsh/* set filetype=zsh
 autocmd BufNewFile,BufRead *.pp,*.epp set filetype=puppet
 autocmd BufNewFile,BufRead *.swift set filetype=swift
-autocmd BufNewFile,BufRead Jenkinsfile set filetype=groovy
 autocmd BufNewFile,BufRead Podfile,Puppetfile,Brewfile set filetype=ruby
 autocmd BufNewFile,BufRead *.gitconfig_* set filetype=gitconfig
 autocmd BufNewFile,BufRead *.timesheet set filetype=timesheet
 autocmd BufNewFile,BufRead *.eyaml set filetype=yaml
 autocmd FileType text setlocal spell
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 colorcolumn=80
-autocmd FileType groovy setlocal tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType go,lprolog setlocal tabstop=4 shiftwidth=4 softtabstop=4 nolist noexpandtab
 
 " Pathogen
