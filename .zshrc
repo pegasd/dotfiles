@@ -82,5 +82,10 @@ ssh-add -L > /dev/null || ssh-add
 # iTerm2 shell integration
 test -e "${HOME}/.iterm2/shell_integration.zsh" && source "${HOME}/.iterm2/shell_integration.zsh"
 
+# Helm usage
+export HELM_EXPERIMENTAL_OCI=1
+export DOCKER_CONFIG="${HOME}/.docker"
+export HELM_REGISTRY_CONFIG="${DOCKER_CONFIG}/config.json"
+
 # Exit to prevent execution of unreviewed appended code
 return 0
