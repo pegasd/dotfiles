@@ -63,25 +63,30 @@ umask 002
 # Various dev environment settings
 ##
 
-# google-cloud-sdk
-GCLOUD_SDK_PATH='/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk'
-[ -f "${GCLOUD_SDK_PATH}/path.zsh.inc" ] && . "${GCLOUD_SDK_PATH}/path.zsh.inc"
-[ -f "${GCLOUD_SDK_PATH}/completion.zsh.inc" ] && . "${GCLOUD_SDK_PATH}/completion.zsh.inc"
+case $(uname) in
+  Darwin)
+    # google-cloud-sdk
+    GCLOUD_SDK_PATH='/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk'
+    [ -f "${GCLOUD_SDK_PATH}/path.zsh.inc" ] && . "${GCLOUD_SDK_PATH}/path.zsh.inc"
+    [ -f "${GCLOUD_SDK_PATH}/completion.zsh.inc" ] && . "${GCLOUD_SDK_PATH}/completion.zsh.inc"
 
-# rvm
-[ -s ~/.rvm/scripts/rvm ] && . ~/.rvm/scripts/rvm
+    # Go
+    export GOPATH=~/Developer/Go
+
+    # A dirty workaround for new macOS versions
+    ssh-add -L > /dev/null || ssh-add
+
+    # iTerm2 shell integration
+    test -e "${HOME}/.iterm2/shell_integration.zsh" && source "${HOME}/.iterm2/shell_integration.zsh"
+  ;;
+  FreeBSD)
+    # Docker on FreeBSD
+    test -x "$(which docker-machine)" && eval "$(docker-machine env default)"
+  ;;
+esac
 
 # pyenv
 [ -d ~/.pyenv ] && eval "$(pyenv init --path)"
-
-# Go
-export GOPATH=~/Developer/Go
-
-# A dirty workaround for new macOS versions
-ssh-add -L > /dev/null || ssh-add
-
-# iTerm2 shell integration
-test -e "${HOME}/.iterm2/shell_integration.zsh" && source "${HOME}/.iterm2/shell_integration.zsh"
 
 # Helm usage
 export HELM_EXPERIMENTAL_OCI=1
