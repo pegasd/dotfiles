@@ -20,10 +20,14 @@ set modeline
 set smartcase
 set ttyfast
 set nohlsearch
-set mouse=a
 set list
 set listchars=tab:→·,trail:·,nbsp:¬
 " set listchars=tab:>_,trail:_,nbsp:% " Lame ASCII-safe version
+
+" OS-specific
+if has("mac")
+  set mouse=a
+endif
 
 " Encoding
 set encoding=utf-8
