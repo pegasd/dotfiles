@@ -43,7 +43,7 @@ alias bin='bundle install --path ~/.bundle'
 alias anplay='time ansible-playbook --diff'
 
 # Update dotfiles
-alias updotfiles='git -C ~/.dotfiles pull; rsync -av ~/.dotfiles/ ~ --exclude=.git --exclude=LICENSE --exclude=*.md; . ~/.zshrc'
+alias updotfiles='git -C ~/.dotfiles pull; rsync -r ~/.dotfiles/ ~ --exclude=.git --exclude=LICENSE --exclude=*.md; . ~/.zshrc'
 
 # OS-specific aliases
 case $(uname) in
