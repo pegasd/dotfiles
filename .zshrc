@@ -80,8 +80,7 @@ case $(uname) in
     test -e "${HOME}/.iterm2/shell_integration.zsh" && source "${HOME}/.iterm2/shell_integration.zsh"
   ;;
   FreeBSD)
-    # Docker on FreeBSD
-    test -x "$(which docker-machine)" && eval "$(docker-machine env default)"
+    # FreeBSD-specific configuration
   ;;
 esac
 
