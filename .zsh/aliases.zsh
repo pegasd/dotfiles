@@ -32,7 +32,6 @@ alias ll="${LS} -la"
 alias g='git'
 alias v='vim'
 alias sv='sudo vim'
-alias sgrep='ggrep -RE --color=always'
 alias rmjunk='find . -name ".DS_Store" -delete 2> /dev/null'
 
 # Ruby
@@ -43,7 +42,15 @@ alias bin='bundle install --path ~/.bundle'
 # Ansible
 alias anplay='time ansible-playbook --diff'
 
-# macOS
-alias pbud='/usr/libexec/PlistBuddy'
-alias xee='open -a xee³'
-alias brewup='brew upgrade --greedy'
+# OS-specific aliases
+case $(uname) in
+  Darwin)
+    alias sgrep='sudo ggrep -RE --color=always'
+    alias pbud='/usr/libexec/PlistBuddy'
+    alias xee='open -a xee³'
+    alias brewup='brew upgrade --greedy'
+  ;;
+  FreeBSD)
+    alias sgrep='sudo grep -RE --color=always'
+  ;;
+esac
