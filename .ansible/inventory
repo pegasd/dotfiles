@@ -1,5 +1,0 @@
-[localhost]
-local ansible_connection=local
-
-[rpi]
-rpi3
