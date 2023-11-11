@@ -49,11 +49,11 @@ updotfiles()
 
   if [ -d ~/.dotfiles-private ]
   then
-    git -C ~/.dotfiles-private
+    git -C ~/.dotfiles-private pull
     rsync -r ~/.dotfiles-private/ ~ --exclude=.git --exclude=LICENSE --exclude=*.md
   fi
 
-  . ~/.zshrc
+  source ~/.zshrc
 }
 
 # OS-specific aliases
