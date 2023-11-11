@@ -32,7 +32,6 @@ alias ll="${LS} -la"
 alias g='git'
 alias v='vim'
 alias sv='sudo vim'
-alias rmjunk='find . -name ".DS_Store" -delete 2> /dev/null'
 
 # Ruby
 alias rk='time bundle exec rake'
@@ -43,11 +42,24 @@ alias bin='bundle install --path ~/.bundle'
 alias anplay='time ansible-playbook --diff'
 
 # Update dotfiles
-alias updotfiles='git -C ~/.dotfiles pull; rsync -r ~/.dotfiles/ ~ --exclude=.git --exclude=LICENSE --exclude=*.md; . ~/.zshrc'
+updotfiles()
+{
+  git -C ~/.dotfiles pull
+  rsync -r ~/.dotfiles/ ~ --exclude=.git --exclude=LICENSE --exclude=*.md
+
+  if [ -d ~/.dotfiles-private ]
+  then
+    git -C ~/.dotfiles-private
+    rsync -r ~/.dotfiles-private/ ~ --exclude=.git --exclude=LICENSE --exclude=*.md
+  fi
+
+  . ~/.zshrc
+}
 
 # OS-specific aliases
 case $(uname) in
   Darwin)
+    alias rmjunk='find . -name .DS_Store -delete 2> /dev/null'
     alias sgrep='sudo ggrep -RE --color=always'
     alias pbud='/usr/libexec/PlistBuddy'
     alias xee='open -a xee³'
