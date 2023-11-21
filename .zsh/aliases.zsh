@@ -61,11 +61,13 @@ case $(uname) in
   Darwin)
     alias rmjunk='find . -name .DS_Store -delete 2> /dev/null'
     alias sgrep='sudo ggrep -RE --color=always'
+    alias rgrep='ggrep -RE --color=always'
     alias pbud='/usr/libexec/PlistBuddy'
     alias xee='open -a xee³'
     alias brewup='brew upgrade --greedy'
   ;;
   FreeBSD)
     alias sgrep='sudo grep -RE --color=always'
+    alias rgrep='grep -RE --color=always'
   ;;
 esac
