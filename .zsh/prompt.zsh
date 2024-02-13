@@ -14,7 +14,7 @@ case $(hostname -s) in
   simensis) HOST_COLOR="$pr_green" ;;
   lupus) HOST_COLOR="$pr_yellow" ;;
   adustus) HOST_COLOR="$pr_magenta" ;;
-  rufus) HOST_COLOR="$pr_lmagenta" ;;
+  edwardii) HOST_COLOR="$pr_lmagenta" ;;
   *) HOST_COLOR="$pr_cyan" ;;
 esac
 
