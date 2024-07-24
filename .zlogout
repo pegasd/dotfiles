@@ -1,0 +1,1 @@
+[ $(uname) = "FreeBSD" ] && clear
