@@ -31,7 +31,7 @@ alias ll="${LS} -la"
 
 alias g='git'
 alias v='vim'
-alias sv='sudo vim'
+alias sv='sudo --preserve-env vim'
 
 # Ruby
 alias rk='time bundle exec rake'
