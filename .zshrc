@@ -15,7 +15,7 @@ HISTFILE=~/.history/zshhistory
 cdpath=(~)
 fpath=($fpath ~/.zsh/functions)
 path=()
-for PDIR in ~/bin \
+for PDIR in ~/bin ~/.rbenv/shims \
   /opt/local/bin  /usr/local/bin  /bin  /usr/bin  \
   /opt/local/sbin /usr/local/sbin /sbin /usr/sbin \
   /opt/puppetlabs/pdk/bin /opt/puppetlabs/bin \
