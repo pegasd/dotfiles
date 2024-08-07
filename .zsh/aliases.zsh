@@ -15,7 +15,7 @@ alias -g H='| head -n 15'
 alias -g L='| less'
 
 # Aliases
-if test ls --color 2> /dev/null; then
+if ls --color 2> /dev/null 1>&2; then
   export LS_COLORS='no=00:fi=00:di=33:ln=35:pi=34:so=35:do=35:bd=35:cd=35:or=31:ex=32'
   LS='ls --color -F'
 else
@@ -67,6 +67,10 @@ case $(uname) in
     alias brewup='brew upgrade --greedy'
   ;;
   FreeBSD)
+    alias sgrep='sudo grep -RE --color=always'
+    alias rgrep='grep -RE --color=always'
+  ;;
+  Linux)
     alias sgrep='sudo grep -RE --color=always'
     alias rgrep='grep -RE --color=always'
   ;;
