@@ -38,6 +38,15 @@ alias rk='time bundle exec rake'
 alias be='time bundle exec'
 alias bin='bundle install --path ~/.bundle'
 
+# Puppet
+p_bin='time sudo puppet'
+p_run="${p_bin} --test"
+alias pat="${p_run}"
+alias patenv="${p_run} --environment $*"
+alias patn="${p_run} --noop"
+alias pfb="${p_bin} filebucket --local"
+#alias patnoop="${p_run} --enable && ${p_run} --noop && ${p_run} --disable"
+
 # Ansible
 alias anplay='time ansible-playbook --diff'
 
