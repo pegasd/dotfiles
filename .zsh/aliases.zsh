@@ -40,7 +40,7 @@ alias bin='bundle install --path ~/.bundle'
 
 # Puppet
 p_bin='time sudo puppet'
-p_run="${p_bin} --test"
+p_run="${p_bin} agent --test"
 alias pat="${p_run}"
 alias patenv="${p_run} --environment $*"
 alias patn="${p_run} --noop"
