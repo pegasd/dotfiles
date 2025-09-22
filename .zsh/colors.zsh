@@ -8,6 +8,10 @@
 # terminfo (iTerm was the problem for me)
 ###
 
+# ls colors
+export LS_COLORS='no=00:fi=00:di=33:ln=35:pi=34:so=35:do=35:bd=35:cd=35:or=31:ex=32'
+export LSCOLORS='dxfxexexcxexexbxhxhxdx'
+
 # Load color arrays ($fg and $bg)
 autoload colors
 colors
