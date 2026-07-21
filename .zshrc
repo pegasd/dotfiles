@@ -19,7 +19,9 @@ for PDIR in ~/bin ~/.rbenv/shims \
   /opt/local/bin  /usr/local/bin  /bin  /usr/bin  \
   /opt/local/sbin /usr/local/sbin /sbin /usr/sbin \
   /opt/puppetlabs/pdk/bin /opt/puppetlabs/bin \
-  /usr/local/opt/libpq/bin /opt/homebrew/bin
+  /usr/local/opt/libpq/bin /opt/homebrew/bin \
+  /opt/homebrew/share/google-cloud-sdk/bin \
+  /opt/homebrew/opt/rustup/bin
 do
   [ -d $PDIR ] && path=($path $PDIR)
 done
