@@ -10,7 +10,7 @@ setopt prompt_subst
 # Prompt Colors
 CUR_DIR_COLOR="$pr_yellow"
 
-case $(hostname -s) in
+case ${HOST%%.*} in
   simensis) HOST_COLOR="$pr_green" ;;
   lupus) HOST_COLOR="$pr_yellow" ;;
   adustus) HOST_COLOR="$pr_magenta" ;;
